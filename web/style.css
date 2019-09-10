@@ -1,0 +1,45 @@
+body{
+    font-family: Tahoma, sans-serif;
+}
+header{
+    padding-bottom: 30px;
+}
+
+.header{
+    text-align: center;
+}
+
+.nav{
+    margin: auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: lightgray;
+}
+
+.menu{
+    text-align: center;
+}
+
+.menu a{
+    color: dimgrey;
+    font-size: large;
+    text-decoration: none;
+}
+
+.card{
+    padding-top: 20px;
+    width: 50%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.cardInfo {
+    display: grid;
+    grid-template-columns: 125px 3fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 10px;
+}
+
