@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Celestial Slug</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+</head>
+<body>
+<header class="header">
+    <h1>MonsterMon Cards</h1>
+</header>
+<nav class="nav">
+    <p class="menu"><a href="index.html">Home</a></p>
+    <p class="menu"><a href="list.html">List</a></p>
+    <p class="menu"><a href="deck.html">Deck</a></p>
+    <p class="menu selected"><a href="cardDetail.html">Card Detail</a></p>
+</nav>
+<div class="card">
+    <div class="cardInfo">
+        <img id="CelestialSlug" src="img/Celestial_Slug.png" height="606" width="344" alt="Celestial_Slug"/>
+        <button id="upVote">&uarr;</button>
+        <span id="vote"></span>
+        <button id="downVote">&darr;</button>
+
+        <label for="textComment">Comment</label>
+        <textarea id="textComment" placeholder="Reading from others comments" cols="50" rows="10" disabled></textarea>
+        <button id="edit" onclick="goToEdit()">Comment</button>
+        <script>
+            function goToEdit()
+            {
+                window.location = 'cardEdit.html';
+            }
+
+            let vote = 0;
+
+            function upVote() {
+                vote++;
+                $('#vote').text(vote);
+            }
+
+            function downVote() {
+                vote--;
+                $('#vote').text(vote);
+
+            }
+
+
+            $('#upVote').on('click', upVote);
+            $('#downVote').on('click',downVote);
+            $('#vote').html(vote);
+        </script>
+
+    </div>
+</div>
+</body>
+</html>
