@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+    <context:property-placeholder location="classpath:MonsterMon.properties"/>
+
+
+
+    <bean id="myCL" class="springxml.services.beans.CardInfo">
+        <property name="color" value="${c1.cardColor}"/>
+    </bean>
+
+    <bean id="myCI" class="springxml.services.beans.CardLog">
+        <property name="name" value="${c1.cardName}"/>
+    </bean>
+
+
+</beans>
