@@ -1,6 +1,8 @@
-package springxml.services.beans;
+package springxml;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import springxml.services.CardInfo;
+import springxml.services.CardLog;
 
 
 public class SpringApp {

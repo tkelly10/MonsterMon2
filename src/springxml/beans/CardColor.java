@@ -1,7 +1,8 @@
-package springxml.services.beans;
+package springxml.beans;
 
 
-
+import springxml.services.CardInfo;
+import springxml.services.CardLog;
 
 public class CardColor {
     private String cardColor;
