@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Mon Nov 18 21:08:46 CST 2019:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.15.1.3 - (1853019): instance a816c00e-016e-81a2-4798-00000b78f510 
+on database directory C:\Users\tkell\Documents\Fall Semester 19\Dist Java\MonsterMon-JavaDist\lib\dbdemo with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@2626b418 
+Loaded from file:/C:/Users/tkell/Documents/Fall%20Semester%2019/Dist%20Java/MonsterMon-JavaDist/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=12.0.2+10
+user.dir=C:\Users\tkell\Documents\Fall Semester 19\Dist Java\MonsterMon-JavaDist
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
