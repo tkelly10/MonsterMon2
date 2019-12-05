@@ -13,28 +13,27 @@ public class Card {
     private String name;
     @Column(name = "description")
     private String description;
-
     @Column(name = "attack")
     private String attack;
-    @Column(name = "attackmanacost")
-    private int aManaCost;
+    @Column(name = "attackManaCost")
+    private int attackManaCost;
     @Column(name = "defense")
     private String defense;
-    @Column(name = "defensemanacost")
-    private int dManaCost;
+    @Column(name = "defenseManaCost")
+    private int defenseManaCost;
 
     @ManyToOne(cascade = {CascadeType.DETACH, CascadeType.MERGE,
             CascadeType.PERSIST, CascadeType.REFRESH})
     @JoinColumn(name = "colorId")
     private CardColor cardColor;
 
-    public Card(String name, String description, String attack, int aManaCost, String defense, int dManaCost) {
+    public Card(String name, String description, String attack, int attackManaCost, String defense, int defenseManaCost) {
         this.name = name;
         this.description = description;
         this.attack = attack;
-        this.aManaCost = aManaCost;
+        this.attackManaCost = attackManaCost;
         this.defense = defense;
-        this.dManaCost = dManaCost;
+        this.defenseManaCost = defenseManaCost;
     }
 
     public Card() {
@@ -80,12 +79,12 @@ public class Card {
         this.attack = attack;
     }
 
-    public int getaManaCost() {
-        return aManaCost;
+    public int getAttackManaCost() {
+        return attackManaCost;
     }
 
-    public void setaManaCost(int aManaCost) {
-        this.aManaCost = aManaCost;
+    public void setAttackManaCost(int attackManaCost) {
+        this.attackManaCost = attackManaCost;
     }
 
     public String getDefense() {
@@ -96,12 +95,12 @@ public class Card {
         this.defense = defense;
     }
 
-    public int getdManaCost() {
-        return dManaCost;
+    public int getDefenseManaCost() {
+        return defenseManaCost;
     }
 
-    public void setdManaCost(int dManaCost) {
-        this.dManaCost = dManaCost;
+    public void setDefenseManaCost(int defenseManaCost) {
+        this.defenseManaCost = defenseManaCost;
     }
 
     @Override
@@ -111,9 +110,9 @@ public class Card {
                 ", name='" + name + '\'' +
                 ", description='" + description + '\'' +
                 ", attack='" + attack + '\'' +
-                ", aManaCost=" + aManaCost +
+                ", aManaCost=" + attackManaCost +
                 ", defense='" + defense + '\'' +
-                ", dManaCost=" + dManaCost +
+                ", dManaCost=" + defenseManaCost +
                 ", cardColor=" + cardColor +
                 '}';
     }

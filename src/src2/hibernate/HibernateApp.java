@@ -28,13 +28,13 @@ public class HibernateApp {
 
         try{
 
-          app.makeCard();
+//          app.makeCard();
 //          app.updateCard(101);
 //          app.readCard(101);
 //          app.deleteCard(201);
 //            app.createColor();
 //            app.updateColor(2);
-           // app.readColor(1);
+//            app.readColor(1);
 //            app.deleteColor(2);
 
 
