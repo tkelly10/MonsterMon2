@@ -7,5 +7,25 @@
       <jdbc-driver>org.apache.derby.jdbc.EmbeddedDriver</jdbc-driver>
       <jdbc-url>jdbc:derby:$PROJECT_DIR$/lib/dbdemo</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="myDataSource" uuid="efe161b7-c297-49c0-8b08-628565428b66">
+      <driver-ref>derby.embedded</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>c3p0
+
+C:/Users/tkell/Documents/Fall Semester 19/Dist Java/MonsterMon-JavaDist/web/WEB-INF/applicationContext.xml</remarks>
+      <jdbc-driver>org.apache.derby.jdbc.EmbeddedDriver</jdbc-driver>
+      <jdbc-url>jdbc:derby:#{ servletContext.getRealPath('/') }/../../../lib/dbdemo</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="hibernate.cfg.xml/Hibernate" uuid="fe93567d-caad-42ad-800e-9b25ec858d1c">
+      <driver-ref>derby.embedded</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>Hibernate
+
+C:/Users/tkell/Documents/Fall Semester 19/Dist Java/MonsterMon-JavaDist/src/src2/hibernate.cfg.xml</remarks>
+      <jdbc-driver>org.apache.derby.jdbc.EmbeddedDriver</jdbc-driver>
+      <jdbc-url>jdbc:derby:lib/dbdemo</jdbc-url>
+    </data-source>
   </component>
 </project>
